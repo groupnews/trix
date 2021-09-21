@@ -42,7 +42,7 @@ Trix.config.toolbar =
           </div>
         </div>
       </div>
-			<div class="trix-dialog trix-dialog--heading" data-trix-dialog="x-heading" data-trix-dialog-attribute="x-heading">
+      <div class="trix-dialog trix-dialog--heading" data-trix-dialog="x-heading" data-trix-dialog-attribute="x-heading">
         <div class="trix-dialog__link-fields">
           <div class="trix-button-group">
             <button type="button" class="trix-button trix-button--dialog" data-trix-attribute="heading1" title="#{lang.heading1}">#{lang.heading1}</button>

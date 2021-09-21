@@ -14,8 +14,10 @@ class Trix.LineBreakInsertion
   shouldInsertBlockBreak: ->
     if @block.hasAttributes() and @block.isListItem() and not @block.isEmpty()
       @startLocation.offset isnt 0
+    else if not @shouldBreakFormattedBlock()
+      @breaksOnReturn 
     else
-      @breaksOnReturn and @nextCharacter isnt "\n"
+      false
 
   shouldBreakFormattedBlock: ->
     @block.hasAttributes() and not @block.isListItem() and

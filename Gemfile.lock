@@ -71,6 +71,7 @@ GEM
     http_parser.rb (0.8.0)
     i18n (1.8.10)
       concurrent-ruby (~> 1.0)
+    json (2.5.1)
     jwt (2.2.3)
     minitest (5.14.4)
     multi_json (1.15.0)
@@ -104,8 +105,9 @@ GEM
     thread_safe (0.3.6)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
-    uglifier (4.2.0)
-      execjs (>= 0.3.0, < 3)
+    uglifier (2.5.3)
+      execjs (>= 0.3.0)
+      json (>= 1.8.0)
     useragent (0.16.10)
     websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
@@ -125,7 +127,7 @@ DEPENDENCIES
   sprockets (= 3.6.0)
   sprockets-export
   sprockets-svgo
-  uglifier
+  uglifier (~> 2.5.1)
 
 BUNDLED WITH
    2.2.17
